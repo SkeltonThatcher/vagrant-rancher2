@@ -1,4 +1,4 @@
-# Vagrant files to create a Rancher server and host environment for local development
+# Vagrant files to create a Rancher v2.0 server and host environment for local development
 
 ## Requirements
 * Vagrant (with Virtualbox plugin)
@@ -6,11 +6,11 @@
 
 ## Tested using the following desktop deployment environments
 * Ubuntu 17.04 (Desktop)
-* macOS Sierra 10.12.6 (Desktop)
+* macOS High Sierra 10.13 (Desktop)
 
 ## Tested using the following Rancher, Vagrant and Docker versions
-* Rancher Server v1.6.7
-* Rancher Agent v1.2.6
+* Rancher Server v2.0 (Preview)
+* Rancher Agent v2.0-alpha4
 * CentOS 7 (Vagrantbox)
 * Docker-CE v17.06.0
 
@@ -19,7 +19,7 @@
 1. Clone the repo
 2. Run `sudo vagrant plugin install vagrant-vbguest` (to ensure host/guest VBox additions are matched)
 3. Run `vagrant up` from within /server
-4. After the instance is launched wait for 3-4 minutes until the Rancher server is up
+4. After the instance is launched wait a few minutes until the Rancher server is up
 5. Access the Rancher sever at http://192.168.50.50:8080
 6. Go to infrastructure > hosts > add host
 7. Accept the default host reg URL
